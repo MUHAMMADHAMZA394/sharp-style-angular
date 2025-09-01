@@ -1,3 +1,5 @@
+name: Deploy to GitHub Pages
+
 on:
   push:
     branches:
@@ -19,5 +21,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages   # 👈 yahan se deploy hoga
+          branch: gh-pages
           folder: dist
