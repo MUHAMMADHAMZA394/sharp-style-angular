@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/sharp-style-angular/",  // 👈 Ye line add ki hai
+  base: "/sharp-style-angular/",   // 👈 yeh line add karo
   plugins: [
     react(),
     mode === 'development' &&
