@@ -9,11 +9,14 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/sharp-style-angular/",   // 👈 yeh line add karo
+  base: "/sharp-style-angular/",
+  build: {
+    outDir: "dist",   // 👈 force output directly into dist/
+    emptyOutDir: true,
+  },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
@@ -21,3 +24,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
