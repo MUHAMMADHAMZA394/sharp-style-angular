@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				heading: ['var(--font-heading)', 'serif'],
+				body: ['var(--font-body)', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +30,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +56,13 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				barbershop: {
+					gold: 'hsl(var(--barbershop-gold))',
+					dark: 'hsl(var(--barbershop-dark))',
+					charcoal: 'hsl(var(--barbershop-charcoal))',
+					'light-gold': 'hsl(var(--barbershop-light-gold))',
+					bronze: 'hsl(var(--barbershop-bronze))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
