@@ -3,11 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sharp Style Angular</title>
+    <title>Elite Cuts - Premium Barbershop & Grooming Services</title>
+    <meta
+      name="description"
+      content="Elite Cuts offers premium barbershop services including haircuts, beard trims, traditional shaves, and grooming in a modern, professional environment."
+    />
+    <meta name="author" content="Elite Cuts Barbershop" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Elite Cuts - Premium Barbershop & Grooming Services" />
+    <meta
+      property="og:description"
+      content="Elite Cuts offers premium barbershop services including haircuts, beard trims, traditional shaves, and grooming in a modern, professional environment."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@elitecuts" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
+
   <body>
     <div id="root"></div>
-    <!-- Vite will replace this with the correct hashed assets after build -->
+
+    <!-- Redirect restore (for GitHub Pages refresh issue) -->
+    <script type="text/javascript">
+      if (sessionStorage.redirect) {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        history.replaceState(null, null, redirect);
+      }
+    </script>
+
+    <!-- Vite entry point -->
     <script type="module" src="/sharp-style-angular/src/main.tsx"></script>
   </body>
 </html>
