@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirecting...</title>
     <script type="text/javascript">
-      // Save the current path and redirect to index.html
+      // Save the current path before redirect
       sessionStorage.redirect = location.pathname + location.search + location.hash;
-      window.location.href = "/sharp-style-angular/";
+      // Redirect to index.html inside the repo base
+      window.location.replace("/sharp-style-angular/index.html");
     </script>
   </head>
   <body>
