@@ -25,19 +25,17 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
+  <script type="text/javascript">
+    if (sessionStorage.redirect) {
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      history.replaceState(null, null, redirect);
+    }
+  </script>
+
   <body>
     <div id="root"></div>
-
-    <!-- Redirect restore (for GitHub Pages refresh issue) -->
-    <script type="text/javascript">
-      if (sessionStorage.redirect) {
-        const redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        history.replaceState(null, null, redirect);
-      }
-    </script>
-
-    <!-- ✅ Correct entry for Vite -->
+    <!-- ✅ Yehi entry thi pehle -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
