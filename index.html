@@ -19,7 +19,21 @@
     <link rel="stylesheet" crossorigin href="/sharp-style-angular/assets/index-vWbNPYfh.css">
   </head>
 
+
+<script type="text/javascript">
+  if (sessionStorage.redirect) {
+    const redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    history.replaceState(null, null, redirect);
+  }
+</script>
+
+  
   <body>
     <div id="root"></div>
   </body>
 </html>
+
+
+
+
