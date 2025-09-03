@@ -25,17 +25,19 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   </head>
 
-  <script type="text/javascript">
-    if (sessionStorage.redirect) {
-      const redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      history.replaceState(null, null, redirect);
-    }
-  </script>
-
   <body>
     <div id="root"></div>
-    <!-- ✅ Yehi entry thi pehle -->
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- ✅ Yeh script Vite build ke baad replace hota hai hashed bundle se -->
+    <script type="module" src="./src/main.tsx"></script>
+
+    <!-- ✅ Redirect script for GitHub Pages -->
+    <script type="text/javascript">
+      if (sessionStorage.redirect) {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        history.replaceState(null, null, redirect);
+      }
+    </script>
   </body>
 </html>
