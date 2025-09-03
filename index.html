@@ -27,16 +27,18 @@
     <link rel="stylesheet" crossorigin href="/sharp-style-angular/assets/index-vWbNPYfh.css">
   </head>
 
-  <script type="text/javascript">
-    if (sessionStorage.redirect) {
-      const redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      history.replaceState(null, null, redirect);
-    }
-  </script>
-
   <body>
     <div id="root"></div>
-    <!-- ✅ Yehi entry thi pehle -->
+
+    <!-- ✅ Yeh script Vite build ke baad replace hota hai hashed bundle se -->
+
+    <!-- ✅ Redirect script for GitHub Pages -->
+    <script type="text/javascript">
+      if (sessionStorage.redirect) {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        history.replaceState(null, null, redirect);
+      }
+    </script>
   </body>
 </html>
